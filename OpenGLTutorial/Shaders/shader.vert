@@ -1,8 +1,7 @@
 #version 330
 
 layout (location = 0) in vec3 pos;
-// As the first stage of the pipeline, vertex shader will receive the texture but will not do anything to 
-// it. Instead it will just pass it on to the fragment shader
+// Although fragment shader deals with textures, we need to pass it via vertex shader for interpolation
 layout (location = 1) in vec2 tex;
 
 out vec4 vCol;
